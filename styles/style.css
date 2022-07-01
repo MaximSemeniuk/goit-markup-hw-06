@@ -597,13 +597,12 @@ img {
 }
 
 .policy-input:focus + .policy-icon {
-  outline: 1px solid var(--second-logo-color);
+  outline: 1px solid var(--link-color);
   background-image: url(../images/icon.svg/icon-focus.svg);
 }
 
-.policy-input:focus:checked + .policy-icon {
+.policy-input:checked:focus + .policy-icon {
   background-image: url(../images/icon.svg/icon-check.svg);
-  outline: hidden;
 }
 
 .policy-icon {
