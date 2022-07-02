@@ -292,17 +292,23 @@
             </li>
           </ul>
         </div>
-        <div class="form-container">
-          <b class="form-title footer-title">Подпишитесь на рассылку</b>
-          <form class="footer-subscribe" action="subscribe" autocomplete="off">
-            <label class="subscribe-label" for="footer-email"></label>
-            <input
-              class="subscribe-input"
-              type="email"
-              id="footer-email"
-              name="email"
-              placeholder="E-mail"
-            />
+        <div class="form-container subscribe-container">
+          <p class="form-title footer-title">Подпишитесь на рассылку</p>
+          <form
+            class="footer-subscribe form-subscribe js-speaker-form"
+            action="subscribe"
+            autocomplete="off"
+          >
+            <label class="subscribe-label">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+
             <button class="subscribe-button" type="submit">
               Подписаться
               <svg class="subscribe-icon">
@@ -317,5 +323,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
